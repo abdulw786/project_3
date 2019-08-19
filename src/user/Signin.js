@@ -92,10 +92,10 @@ class Signin extends Component {
             <div className="container">
                 <h2 className="mt-5 mb-5">SignIn</h2>
                 <hr />
-                <SocialLogin />
+                {/* <SocialLogin /> */}
 
-                <hr />
-                <br />
+                {/* <hr /> */}
+                {/* <br /> */}
                 <br />
 
                 <div
