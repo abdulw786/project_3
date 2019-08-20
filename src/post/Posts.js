@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { list } from "./apiPost";
 import DefaultPost from "../images/mountains.jpg";
 import { Link } from "react-router-dom";
+import './post.css';
 
 class Posts extends Component {
     constructor() {
@@ -49,8 +50,8 @@ class Posts extends Component {
                         : " Unknown";
 
                     return (
-                        <div className="card col-md-4" key={i}>
-                            <div className="card-body">
+                        <div className="card col-md-4" id = "card" key={i}>
+                            <div className="card-body"   >
                                 <img
                                     src={`${
                                         process.env.REACT_APP_API_URL

@@ -1,6 +1,9 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import { signout, isAuthenticated } from "../auth";
+import brand from './brand.jpg';
+import './menu.css';
+
 
 const isActive = (history, path) => {
     if (history.location.pathname === path) return { color: "#ff9900" };
@@ -9,7 +12,13 @@ const isActive = (history, path) => {
 
 const Menu = ({ history }) => (
     <div>
-        <ul className="nav nav-tabs bg-primary">
+        <ul className="nav nav-tabs bg-primary" >
+                    <Link to="/" className="nav-item">
+        <h1 className="nav-item1">Challenger
+                </h1>
+                    </Link>
+
+
             <li className="nav-item">
                 <Link
                     className="nav-link"

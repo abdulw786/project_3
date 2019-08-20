@@ -1,12 +1,11 @@
 import React from "react";
 import Posts from "../post/Posts";
-
 const Home = () => (
     <div>
-        <div className="jumbotron">
+        {/* <div className="jumbotron">
             <h2>Home</h2>
             <p className="lead">Welcome to Challenge...</p>
-        </div>
+        </div> */}
         <div className="container">
             <Posts />
         </div>
