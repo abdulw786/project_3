@@ -115,7 +115,7 @@ class Signin extends Component {
 
                 {this.signinForm(email, password)}
 
-                <p>
+                {/* <p>
                     <Link
                         to="/forgot-password"
                         className="btn btn-raised btn-danger"
@@ -123,7 +123,7 @@ class Signin extends Component {
                         {" "}
                         Forgot Password
                     </Link>
-                </p>
+                </p> */}
                
             </div>
         );
