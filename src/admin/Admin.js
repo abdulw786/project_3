@@ -29,7 +29,7 @@ class Admin extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-6">
-                            <h2>Posts</h2>
+                            <h2>Challenge</h2>
                             <hr />
                             <Posts />
                         </div>

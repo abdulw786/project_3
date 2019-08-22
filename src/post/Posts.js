@@ -60,7 +60,7 @@ class Posts extends Component {
                                     onError={i =>
                                         (i.target.src = `${DefaultPost}`)
                                     }
-                                    className="img-thunbnail mb-3"
+                                    className="img-thunbnail mb-3 d-flex justify-content-end"
                                     style={{ height: "200px", width: "100%" }}
                                 />
                                 <h5 className="card-title">{post.title}</h5>

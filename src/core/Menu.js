@@ -13,10 +13,11 @@ const isActive = (history, path) => {
 const Menu = ({ history }) => (
     <div>
         <ul className="nav nav-tabs bg-primary" >
-                    <Link to="/" className="nav-item">
+                <li className= "nav-item">    <Link to="/" className="nav-item">
         <h1 className="nav-item1">Challenger
                 </h1>
                     </Link>
+                    </li>
 
 
             <li className="nav-item">

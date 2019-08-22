@@ -91,18 +91,22 @@ class SinglePost extends Component {
         const { like, likes } = this.state;
 
         return (
-            <div className="card-body">
+            <div className="card-body" style={{bacground:"red",textAlign: "center"}}>
                 <img
                     src={`${process.env.REACT_APP_API_URL}/post/photo/${
                         post._id
-                    }`}
+                     }`}
                     alt={post.title}
                     onError={i => (i.target.src = `${DefaultPost}`)}
                     className="img-thunbnail mb-3"
                     style={{
-                        height: "300px",
-                        width: "100%",
-                        objectFit: "cover"
+                        justifyContent:"center",
+                        height: "25%",
+                        width: "25%",
+                        objectFit: "cover",
+                        justifyContent:"center"
+                    
+                        
                     }}
                 />
 
@@ -110,7 +114,7 @@ class SinglePost extends Component {
                     <h3 onClick={this.likeToggle}>
                         <i
                             className="fa fa-thumbs-up text-success bg-dark"
-                            style={{ padding: "10px", borderRadius: "50%" }}
+                            style={{ padding: "5px", borderRadius: "50%" }}
                         />{" "}
                         {likes} Like
                     </h3>
@@ -118,7 +122,7 @@ class SinglePost extends Component {
                     <h3 onClick={this.likeToggle}>
                         <i
                             className="fa fa-thumbs-up text-warning bg-dark"
-                            style={{ padding: "10px", borderRadius: "50%" }}
+                            style={{ padding: "5px", borderRadius: "50%" }}
                         />{" "}
                         {likes} Like
                     </h3>
@@ -135,7 +139,7 @@ class SinglePost extends Component {
                         to={`/`}
                         className="btn btn-raised btn-primary btn-sm mr-5"
                     >
-                        Back to posts
+                        Back to Challenges
                     </Link>
 
                     {isAuthenticated().user &&
@@ -156,7 +160,7 @@ class SinglePost extends Component {
                             </>
                         )}
 
-                    <div>
+                    <div >
                         {isAuthenticated().user &&
                             isAuthenticated().user.role === "admin" && (
                                 <div class="card mt-5">
@@ -196,7 +200,7 @@ class SinglePost extends Component {
         }
 
         return (
-            <div className="container">
+            <div className="container" style={{bacground:"red",textAlign: "center"}} >
                 <h2 className="display-2 mt-5 mb-5">{post.title}</h2>
 
                 {!post ? (
