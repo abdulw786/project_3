@@ -13,14 +13,13 @@ const isActive = (history, path) => {
 const Menu = ({ history }) => (
     <div>
         <ul className="nav nav-tabs bg-primary" >
-                <li className= "nav-item">    <Link to="/" className="nav-item">
+                 <Link to="/" className="nav-item">
         <h1 className="nav-item1">Challenger
                 </h1>
                     </Link>
-                    </li>
 
 
-            <li className="nav-item">
+            <li className="nav-item2">
                 <Link
                     className="nav-link"
                     style={isActive(history, "/")}
@@ -30,7 +29,7 @@ const Menu = ({ history }) => (
                 </Link>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item2">
                 <Link
                     className="nav-link"
                     style={isActive(history, "/users")}
@@ -40,7 +39,7 @@ const Menu = ({ history }) => (
                 </Link>
             </li>
 
-            <li className="nav-item">
+            <li className="nav-item2">
                 <Link
                     to={`/post/create`}
                     style={isActive(history, `/post/create`)}
@@ -52,7 +51,7 @@ const Menu = ({ history }) => (
 
             {!isAuthenticated() && (
                 <>
-                    <li className="nav-item">
+                    <li className="nav-item2">
                         <Link
                             className="nav-link"
                             style={isActive(history, "/signin")}
@@ -61,7 +60,7 @@ const Menu = ({ history }) => (
                             Sign In
                         </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item2">
                         <Link
                             className="nav-link"
                             style={isActive(history, "/signup")}
@@ -74,7 +73,7 @@ const Menu = ({ history }) => (
             )}
 
             {isAuthenticated() && isAuthenticated().user.role === "admin" && (
-                <li className="nav-item">
+                <li className="nav-item2">
                     <Link
                         to={`/admin`}
                         style={isActive(history, `/admin`)}
@@ -87,7 +86,7 @@ const Menu = ({ history }) => (
 
             {isAuthenticated() && (
                 <>
-                    <li className="nav-item">
+                    <li className="nav-item2">
                         <Link
                             to={`/findpeople`}
                             style={isActive(history, `/findpeople`)}
@@ -97,7 +96,7 @@ const Menu = ({ history }) => (
                         </Link>
                     </li>
 
-                    <li className="nav-item">
+                    <li className="nav-item2">
                         <Link
                             to={`/user/${isAuthenticated().user._id}`}
                             style={isActive(
@@ -110,7 +109,7 @@ const Menu = ({ history }) => (
                         </Link>
                     </li>
 
-                    <li className="nav-item">
+                    <li className="nav-item2">
                         <span
                             className="nav-link"
                             style={
