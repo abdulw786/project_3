@@ -24,7 +24,7 @@ class Users extends Component {
     renderUsers = users => (
         <div className="row" style={{margin:"15px", justifyContent:"center"}}>
             {users.map((user, i) => (
-                <div className="card col-md-3" key={i} style={{ margin:'10px', width: "auto",  display: "flex",
+                <div className="card col-md-3" key={i} style={{ margin:'15px', width: "auto",height:"350px",  display: "flex",
                 justifyContent: "center" }}>
                     <img
                         
